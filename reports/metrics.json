@@ -1,0 +1,334 @@
+{
+ "bootstrap": {
+  "linear zero rates": {
+   "sweeps": 2,
+   "largest repricing error": 3.05311e-16,
+   "largest forward jump, bp": 45.48361559900002,
+   "lowest forward, %": 3.08804920606,
+   "highest forward, %": 4.5069341854400005
+  },
+  "log-linear discount factors": {
+   "sweeps": 2,
+   "largest repricing error": 3.05311e-16,
+   "largest forward jump, bp": 32.88198823100004,
+   "lowest forward, %": 3.08804920606,
+   "highest forward, %": 4.39000424895
+  },
+  "monotone cubic": {
+   "sweeps": 6,
+   "largest repricing error": 3.05311e-16,
+   "largest forward jump, bp": 8.045479252000026,
+   "lowest forward, %": 2.95222203613,
+   "highest forward, %": 4.428842324240001
+  }
+ },
+ "bond": {
+  "price": 99.01723599,
+  "yield": 0.0412090765643,
+  "macaulay": 8.32928315098,
+  "modified": 8.16112689936,
+  "convexity": 78.6821494246,
+  "dv01": 0.0808092228138,
+  "effective_duration": 8.31362853672
+ },
+ "nelson_siegel": {
+  "level": 0.03492793382,
+  "slope": -0.004003406333,
+  "curvature": 0.02900199103,
+  "tau": 6.826640383,
+  "rmse": 0.000265764,
+  "max_error": 0.000634709
+ },
+ "hull_white": {
+  "atm": 0.0422137884433,
+  "strike": 0.0422137884433,
+  "bond_option": 0.017959933846,
+  "caplet": 0.00181280049289,
+  "payer": 0.0202744915493,
+  "receiver": 0.0202744915493,
+  "parity_gap": -1.11022e-16,
+  "black_caplet_vol": 0.237407643698
+ },
+ "tree": {
+  "4": {
+   "nodes across": 31,
+   "bond option": -0.011293251324818954,
+   "caplet": 0.031097536122206337,
+   "swaption": -0.01156272085689336,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.3848702626124039
+  },
+  "8": {
+   "nodes across": 61,
+   "bond option": -0.0029035868476550153,
+   "caplet": 0.0195394122072039,
+   "swaption": -0.0030832998227350306,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.37321224777487
+  },
+  "16": {
+   "nodes across": 119,
+   "bond option": 0.00019243238475352697,
+   "caplet": 0.007693424618263389,
+   "swaption": 7.666951332518934e-05,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.3637307910805234
+  },
+  "32": {
+   "nodes across": 237,
+   "bond option": 0.0010875904648361967,
+   "caplet": -0.0023955090518962274,
+   "swaption": 0.001017659814048999,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.360790931929122
+  },
+  "64": {
+   "nodes across": 473,
+   "bond option": 0.001099336337722523,
+   "caplet": 0.002077084657009065,
+   "swaption": 0.0010622124430412772,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.35969603816409
+  },
+  "128": {
+   "nodes across": 945,
+   "bond option": 0.0008033929703596954,
+   "caplet": -0.0002959014199873655,
+   "swaption": 0.000789693899897248,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.3595091654813687
+  },
+  "256": {
+   "nodes across": 1887,
+   "bond option": 0.0004436882656877472,
+   "caplet": 0.0004110856395520557,
+   "swaption": 0.0004466754728709166,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.3598459878855897
+  },
+  "512": {
+   "nodes across": 3771,
+   "bond option": 0.00011458366816063936,
+   "caplet": 5.5770158049250895e-05,
+   "swaption": 0.00012943407698373655,
+   "tree payer - receiver": 0.0,
+   "Bermudan / European": 1.3601553015257872
+  }
+ },
+ "surface": {
+  "1": {
+   "1.0": 0.261118066735,
+   "2.0": 0.240576341545,
+   "5.0": 0.204310637792,
+   "10.0": 0.180421343872
+  },
+  "2": {
+   "1.0": 0.2472086178,
+   "2.0": 0.229273167853,
+   "5.0": 0.198387269157,
+   "10.0": 0.175551151048
+  },
+  "5": {
+   "1.0": 0.216437551604,
+   "2.0": 0.204848124386,
+   "5.0": 0.183621707206,
+   "10.0": 0.165201680894
+  },
+  "10": {
+   "1.0": 0.187246854901,
+   "2.0": 0.179873313123,
+   "5.0": 0.165156178835,
+   "10.0": 0.15421716362
+  }
+ },
+ "calibration": {
+  "exact quotes": {
+   "mean reversion": 0.04999995828,
+   "sigma": 0.009999997971,
+   "volatility error, bp": 0.000207662
+  },
+  "quotes perturbed by 2%": {
+   "mean reversion": 0.05227552268,
+   "sigma": 0.01009432572,
+   "volatility error, bp": 25.0478
+  }
+ },
+ "short_rate": [
+  {
+   "model": "Vasicek",
+   "maturity": 1.0,
+   "closed form": 0.977553816837,
+   "Monte Carlo": 0.977553846323,
+   "standard error": 5.92076e-08,
+   "difference, bp of price": 0.00029485999974987465,
+   "z": 0.49801039013551407
+  },
+  {
+   "model": "Vasicek",
+   "maturity": 2.0,
+   "closed form": 0.951424091993,
+   "Monte Carlo": 0.951423968047,
+   "standard error": 3.76088e-07,
+   "difference, bp of price": -0.0012394600001908174,
+   "z": -0.32956648449054937
+  },
+  {
+   "model": "Vasicek",
+   "maturity": 5.0,
+   "closed form": 0.863220572423,
+   "Monte Carlo": 0.863217005666,
+   "standard error": 3.05778e-06,
+   "difference, bp of price": -0.035667569999731086,
+   "z": -1.1664531130340012
+  },
+  {
+   "model": "Vasicek",
+   "maturity": 10.0,
+   "closed form": 0.7172073815,
+   "Monte Carlo": 0.717195921633,
+   "standard error": 9.64018e-06,
+   "difference, bp of price": -0.11459866999907753,
+   "z": -1.1887606870315444
+  },
+  {
+   "model": "Cox-Ingersoll-Ross",
+   "maturity": 1.0,
+   "closed form": 0.977552938611,
+   "Monte Carlo": 0.977545257571,
+   "standard error": 1.63773e-06,
+   "difference, bp of price": -0.0768104000004044,
+   "z": -4.69005269491335
+  },
+  {
+   "model": "Cox-Ingersoll-Ross",
+   "maturity": 2.0,
+   "closed form": 0.951425713496,
+   "Monte Carlo": 0.951398199589,
+   "standard error": 5.30692e-06,
+   "difference, bp of price": -0.27513907000065174,
+   "z": -5.184533966983707
+  },
+  {
+   "model": "Cox-Ingersoll-Ross",
+   "maturity": 5.0,
+   "closed form": 0.863383594883,
+   "Monte Carlo": 0.863289554315,
+   "standard error": 1.79632e-05,
+   "difference, bp of price": -0.9404056799999783,
+   "z": -5.235179032688932
+  },
+  {
+   "model": "Cox-Ingersoll-Ross",
+   "maturity": 10.0,
+   "closed form": 0.718265210504,
+   "Monte Carlo": 0.718133384652,
+   "standard error": 3.0395e-05,
+   "difference, bp of price": -1.318258520000004,
+   "z": -4.337090047705228
+  }
+ ],
+ "checks": [
+  {
+   "area": "curve",
+   "check": "every quote repriced under every interpolation",
+   "status": "PASS",
+   "detail": "largest error 3.1e-16"
+  },
+  {
+   "area": "curve",
+   "check": "the cubic removes the forward jumps",
+   "status": "PASS",
+   "detail": "8.0 bp between points 0.05 years apart, against 32.9 (log-linear) and 45.5 (linear zero)"
+  },
+  {
+   "area": "curve",
+   "check": "forward rates stay positive",
+   "status": "PASS",
+   "detail": "lowest 2.95%"
+  },
+  {
+   "area": "bond",
+   "check": "key-rate durations add up to the effective duration",
+   "status": "PASS",
+   "detail": "sum 8.313628 against 8.313629"
+  },
+  {
+   "area": "bond",
+   "check": "convexity removes most of the error at 100 bp",
+   "status": "PASS",
+   "detail": "0.403 down to 0.0139 per 100 of face"
+  },
+  {
+   "area": "bond",
+   "check": "duration alone always understates the price",
+   "status": "PASS",
+   "detail": "negative error for every shift"
+  },
+  {
+   "area": "curve",
+   "check": "Nelson-Siegel fits the zero rates within 10 bp",
+   "status": "PASS",
+   "detail": "largest error 6.3 bp, root mean square 2.7 bp"
+  },
+  {
+   "area": "Hull-White",
+   "check": "tree reproduces the curve",
+   "status": "PASS",
+   "detail": "largest relative error of a discount factor 3.1e-15"
+  },
+  {
+   "area": "Hull-White",
+   "check": "closed-form payer and receiver satisfy parity",
+   "status": "PASS",
+   "detail": "gap -1.1e-16"
+  },
+  {
+   "area": "Hull-White",
+   "check": "at-the-money parity holds on the tree",
+   "status": "PASS",
+   "detail": "largest gap 0.0e+00"
+  },
+  {
+   "area": "Hull-White",
+   "check": "finest tree within 0.1% of the closed forms",
+   "status": "PASS",
+   "detail": "largest relative error 1.3e-04 at 512 steps per year"
+  },
+  {
+   "area": "Hull-White",
+   "check": "Bermudan worth more than European",
+   "status": "PASS",
+   "detail": "ratio 1.360"
+  },
+  {
+   "area": "calibration",
+   "check": "parameters recovered from their own volatilities",
+   "status": "PASS",
+   "detail": "a 0.050000, sigma 0.0100000"
+  },
+  {
+   "area": "calibration",
+   "check": "stable under perturbed quotes",
+   "status": "PASS",
+   "detail": "a 0.0523, sigma 0.01009"
+  },
+  {
+   "area": "calibration",
+   "check": "volatility falls with expiry and tenor",
+   "status": "PASS",
+   "detail": "26.1% to 15.4%"
+  },
+  {
+   "area": "short rate",
+   "check": "Vasicek formula within Monte Carlo error",
+   "status": "PASS",
+   "detail": "largest |z| 1.19"
+  },
+  {
+   "area": "short rate",
+   "check": "Cox-Ingersoll-Ross formula within 2 bp of an Euler simulation",
+   "status": "PASS",
+   "detail": "largest gap 1.32 bp of price"
+  }
+ ]
+}
